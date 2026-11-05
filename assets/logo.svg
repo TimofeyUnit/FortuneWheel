@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs><radialGradient id="logo-bg"><stop stop-color="#242252"/><stop offset=".65" stop-color="#302d70"/><stop offset="1" stop-color="#514bc5"/></radialGradient></defs>
+  <circle cx="200" cy="200" r="198" fill="url(#logo-bg)"/>
+  <g fill="none" stroke="#ffb800" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M199 31C203 22 211 47 217 65L321 331 39 169C8 149 48 153 77 151L345 137C400 134 362 159 345 171L99 343C67 363 98 295 111 256Z" stroke-width="12"/>
+    <path d="m197 36 123 303-202-128L40 168l307-22L94 342l101-299M50 159c122-8 317-21 321 1M105 324l174-107M134 285l144 45M163 276l117 61M180 279l91 65" stroke-width="4"/>
+  </g>
+  <g text-anchor="middle" font-family="Arial Rounded MT Bold, Arial Black, sans-serif" font-weight="900" paint-order="stroke fill" stroke="#fff" stroke-width="5" stroke-linejoin="round">
+    <text x="200" y="158" fill="#bc74ff" font-size="81" textLength="245" lengthAdjust="spacingAndGlyphs">колесо</text>
+    <text x="200" y="220" fill="#8ce6e7" font-size="85" textLength="303" lengthAdjust="spacingAndGlyphs">бытовой</text>
+    <text x="200" y="287" fill="#ffd36d" font-size="87" textLength="263" lengthAdjust="spacingAndGlyphs">судьбы</text>
+  </g>
+</svg>
