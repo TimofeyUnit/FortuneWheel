@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#302d70" />
+    <meta name="description" content="Колесо бытовой судьбы — распределяйте домашние дела без споров. Добавьте участников, выберите задачи и доверьтесь колесу." />
+    <link rel="stylesheet" href="MainPage.css" />
+    <link rel="icon" href="assets/wheel.svg" type="image/svg+xml" />
+    <script src="MainPage.js" defer></script>
+    <title>Колесо бытовой судьбы</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержимому</a>
+    <div class="page" id="home">
+      <img class="page-art" src="assets/scene.svg" alt="" aria-hidden="true" fetchpriority="high" />
+      <img class="page-decor" src="assets/decor.svg" alt="" aria-hidden="true" />
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-panel glass">
+            <header class="header">
+              <a class="brand" href="#home" aria-label="Колесо бытовой судьбы — главная">
+                <img class="brand-wheel" src="assets/wheel.svg" alt="" width="58" height="58" />
+                <img class="brand-name" src="assets/wordmark.svg" alt="Колесо бытовой судьбы" width="92" height="58" />
+              </a>
+              <nav class="navigation" aria-label="Основная навигация">
+                <a class="nav-link is-active" href="#home" aria-current="page">Главная</a>
+                <button class="nav-link" type="button" data-open-wheel>Колесо</button>
+                <a class="nav-link" href="#about">О нас</a>
+              </nav>
+            </header>
+            <div class="hero-content">
+              <img class="hero-logo" src="assets/logo.svg" alt="Колесо бытовой судьбы" width="360" height="360" />
+              <div class="hero-copy">
+                <h1 id="hero-title">Кто сегодня моет<br />посуду????</h1>
+                <p class="hero-subtitle">Спорить бесполезно!</p>
+                <p class="hero-description"><span class="yellow">Крутилка</span> решит кто <span class="purple">сегодня</span><br class="desktop-break" /> и за что дежурит.</p>
+                <p class="hero-outro">Готовьте швабры и тряпки.</p>
+              </div>
+            </div>
+            <button class="spin-cta" type="button" data-open-wheel>Срочно крутить!</button>
+          </div>
+        </section>
+        <section class="about" id="about" aria-labelledby="about-title">
+          <div class="team team-left" aria-label="Команда проекта">
+            <a class="person person-gleb" href="https://t.me/kaelillan" target="_blank" rel="noopener noreferrer" aria-label="Глеб, фронтенд-разработчик — Telegram @KAELILLAN">
+              <svg class="person-image" viewBox="119 2395 478 606" role="img" aria-label="QR-код Telegram Глеба, @KAELILLAN" xmlns="http://www.w3.org/2000/svg"><image href="image.png" width="2880" height="4118" /></svg>
+            </a>
+            <a class="person person-kira" href="https://t.me/kk_kontik" target="_blank" rel="noopener noreferrer" aria-label="Кира, дизайнер — Telegram @KK_KONTIK">
+              <svg class="person-image" viewBox="263 3097 472 602" role="img" aria-label="QR-код Telegram Киры, @KK_KONTIK" xmlns="http://www.w3.org/2000/svg"><image href="image.png" width="2880" height="4118" /></svg>
+            </a>
+          </div>
+          <article class="about-panel glass">
+            <h2 id="about-title">О нас:</h2>
+            <div class="about-block">
+              <h3>О проекте:</h3>
+              <p><span class="purple">Колесо бытовой судьбы</span> представляет собой рандомайзер с типичными бытовыми действиями.</p>
+            </div>
+            <div class="about-block">
+              <h3>Как это работает:</h3>
+              <p>Добавьте людей, категории уборки и нажмите крутить, выпавшая категория присвоится к одному человеку, а следующая — другому, и так далее.</p>
+            </div>
+            <p class="about-ending">Меняйте <span class="purple">иконки</span>, их названия, тему <span class="yellow">крутилки</span>, удаляйте, добавляйте <span class="aqua">ячейки</span> и организовывайте свою бытовую судьбу</p>
+          </article>
+          <div class="team team-right">
+            <a class="person person-matvey" href="https://t.me/shumoffline" target="_blank" rel="noopener noreferrer" aria-label="Матвей — Telegram @SHUMOFFLINE">
+              <svg class="person-image" viewBox="2247 2531 474 566" role="img" aria-label="QR-код Telegram Матвея, @SHUMOFFLINE" xmlns="http://www.w3.org/2000/svg"><image href="image.png" width="2880" height="4118" /></svg>
+            </a>
+          </div>
+        </section>
+      </main>
+      <div class="bottom-glass" aria-hidden="true"></div>
+    </div>
+    <dialog class="wheel-dialog" aria-labelledby="wheel-title">
+      <button class="dialog-close" type="button" aria-label="Закрыть колесо">×</button>
+      <h2 id="wheel-title">Доверься колесу</h2>
+      <p class="dialog-intro">Добавь участников и дела. Судьба решит, кто сегодня дежурит.</p>
+      <form id="wheel-form">
+        <div class="wheel-fields">
+          <label for="participants">Кто участвует?<input id="participants" name="participants" placeholder="Глеб, Кира, Матвей" maxlength="300" required autocomplete="off" /><span class="field-hint">Имена через запятую</span></label>
+          <label for="chores">Что нужно сделать?<textarea id="chores" name="chores" rows="2" maxlength="1000" required>Помыть посуду, Вынести мусор, Пропылесосить, Помыть пол, Вытереть пыль, Постирать вещи</textarea><span class="field-hint">Дела через запятую, до 12 секторов</span></label>
+        </div>
+        <div class="interactive-wheel-wrap" aria-hidden="true">
+          <div class="wheel-pointer"></div>
+          <div class="interactive-wheel"><div class="wheel-labels"></div></div>
+          <div class="wheel-hub"><img src="assets/wheel.svg" alt="" width="52" height="52" /></div>
+        </div>
+        <p class="wheel-result" role="status" aria-live="polite">Кому достанется следующее дело?</p>
+        <button class="spin-cta dialog-spin" type="submit">Крутить!</button>
+      </form>
+    </dialog>
+  </body>
+</html>
