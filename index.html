@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#302d70" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,800;0,900;1,800&display=swap&subset=cyrillic" rel="stylesheet" />
+    <link rel="stylesheet" href="MainPage.css" />
+    <link rel="icon" href="assets/wheel.svg" type="image/svg+xml" />
+    <script src="MainPage.js" defer></script>
+    <title>Колесо бытовой судьбы</title>
+  </head>
+  <body>
+    <div class="page" id="home">
+      <img class="page-art" src="assets/scene.svg" alt="" aria-hidden="true" />
+      <img class="page-decor" src="assets/decor.svg" alt="" aria-hidden="true" />
+
+      <header class="header global-header">
+        <a class="brand" href="#home" aria-label="Главная">
+          <img class="brand-wheel" src="assets/wheel.svg" alt="" width="58" height="58" />
+          <img class="brand-name" src="assets/wordmark.svg" alt="Колесо бытовой судьбы" width="92" height="58" />
+        </a>
+        <nav class="navigation">
+          <a class="nav-link main-link is-active" href="#home">Главная</a>
+          <button class="nav-link" type="button" data-open-wheel>Колесо</button>
+          <a class="nav-link main-link" href="#about">О нас</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero">
+          <div class="hero-panel glass">
+            <div class="hero-content">
+              <img class="hero-logo" src="assets/logo.svg" alt="Колесо бытовой судьбы" width="360" height="360" />
+              <div class="hero-copy">
+                <h1 id="hero-title">Кто сегодня моет<br />посуду????</h1>
+                <p class="hero-subtitle">Спорить бесполезно!</p>
+                <p class="hero-description"><span class="yellow">Крутилка</span> решит кто <span class="purple">сегодня</span><br class="desktop-break" /> и за что дежурит.</p>
+                <p class="hero-outro">Готовьте швабры и тряпки.</p>
+              </div>
+            </div>
+            <button class="spin-cta" type="button" data-open-wheel>Срочно крутить!</button>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <article class="about-panel glass">
+            <h2>О нас:</h2>
+            <div class="about-block">
+              <h3>О проекте:</h3>
+              <p><span class="purple">Колесо бытовой судьбы</span> представляет собой рандомайзер с типичными бытовыми действиями.</p>
+            </div>
+            <div class="about-block">
+              <h3>Как это работает:</h3>
+              <p>Добавьте людей, категории уборки и нажмите крутить, выпавшая категория присвоится к одному человеку, а следующая — другому.</p>
+            </div>
+            <p class="about-ending">Меняйте <span class="purple">иконки</span>, их названия, тему <span class="yellow">крутилки</span>, удаляйте, добавляйте <span class="aqua">ячейки</span> и организовывайте свою бытовую судьбу</p>
+          </article>
+        </section>
+
+        <section class="team-row" id="team" aria-label="Команда">
+          <a class="person" href="https://t.me/kaelillan" target="_blank" rel="noopener">
+            <img class="person-qr" src="assets/qr/gleb.png" alt="QR-код Telegram: Глеб" decoding="async" />
+            <span class="person-name">Глеб</span>
+          </a>
+          <a class="person" href="https://t.me/kk_kontik" target="_blank" rel="noopener">
+            <img class="person-qr" src="assets/qr/kira.png" alt="QR-код Telegram: Кира" decoding="async" />
+            <span class="person-name">Кира</span>
+          </a>
+          <a class="person" href="https://t.me/shumcry" target="_blank" rel="noopener">
+            <img class="person-qr" src="assets/qr/matvey.png" alt="QR-код Telegram: Матвей" decoding="async" />
+            <span class="person-name">Матвей</span>
+          </a>
+          <a class="person" href="https://t.me/rstikgang999" target="_blank" rel="noopener">
+            <img class="person-qr" src="assets/qr/german.png" alt="QR-код Telegram: Герман" decoding="async" />
+            <span class="person-name">Герман</span>
+          </a>
+          <a class="person" href="https://t.me/ghjhhkgk" target="_blank" rel="noopener">
+            <img class="person-qr" src="assets/qr/timofey.png" alt="QR-код Telegram: Тимофей" decoding="async" />
+            <span class="person-name">Тимофей</span>
+          </a>
+        </section>
+      </main>
+
+      <section id="wheel-page" class="wheel-page hidden">
+        <svg class="wheel-sprite" aria-hidden="true">
+          <symbol id="scribble-star" viewBox="0 0 100 100">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <polygon stroke-width="4" points="50,6 61,38 95,38 68,58 78,92 50,72 22,92 32,58 5,38 39,38" />
+              <polygon stroke-width="2" transform="rotate(9 50 52)" points="50,2 62,37 98,37 69,59 80,95 50,74 20,95 31,59 2,37 38,37" />
+            </g>
+          </symbol>
+        </svg>
+        <svg class="wheel-star s1" aria-hidden="true"><use href="#scribble-star" /></svg>
+        <svg class="wheel-star s2" aria-hidden="true"><use href="#scribble-star" /></svg>
+        <svg class="wheel-star s3" aria-hidden="true"><use href="#scribble-star" /></svg>
+
+        <aside class="panel participants-panel">
+          <div class="panel-header">
+            <h3>Людишки:</h3>
+            <div class="panel-actions">
+              <button id="add-participant-btn" class="round-btn" type="button" aria-label="Добавить человека">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z" /></svg>
+              </button>
+              <button id="clear-participants-btn" class="round-btn" type="button" aria-label="Удалить всех">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 3h6l1 2h4v2H4V5h4l1-2zM6 9h12l-1 12H7L6 9z" /></svg>
+              </button>
+            </div>
+          </div>
+          <ul id="participants-list" class="item-list"></ul>
+          <div class="panel-footer">
+            <span id="participants-count" class="count">0/8</span>
+          </div>
+        </aside>
+
+        <div class="wheel-container">
+          <div class="interactive-wheel-wrap">
+            <div class="wheel-pointer"></div>
+            <div class="interactive-wheel" id="main-wheel"></div>
+            <div class="wheel-hub">
+              <svg aria-hidden="true"><use href="#scribble-star" /></svg>
+            </div>
+          </div>
+          <p id="wheel-result-text" class="wheel-result">Кому достанется следующее дело?</p>
+          <button id="spin-button" class="spin-cta" type="button">Крутить</button>
+        </div>
+
+        <aside class="panel chores-panel">
+          <div class="panel-header">
+            <h3>Тема колеса:</h3>
+            <input type="text" id="wheel-theme" class="theme-input" value="Бебебебе" maxlength="24" aria-label="Тема колеса" />
+          </div>
+          <ul id="chores-list" class="item-list"></ul>
+          <div class="panel-footer chores-footer">
+            <button id="add-chore-btn" class="add-text-btn" type="button">
+              <span class="round-btn" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z" /></svg>
+              </span>
+              Добавить ячейку
+            </button>
+            <span id="chores-count" class="count">0/12</span>
+          </div>
+        </aside>
+      </section>
+
+      <div class="bottom-glass" aria-hidden="true"></div>
+    </div>
+  </body>
+</html>
