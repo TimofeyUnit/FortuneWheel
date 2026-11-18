@@ -479,7 +479,7 @@ body.wheel-active .page { min-height: 100vh; height: 100vh; }
   body.wheel-active { overflow: auto; }
   body.wheel-active .page { height: auto; min-height: 100vh; }
   .wheel-page {
-    --u: 14px;
+    --u: 12px;
     --top-space: 150px;
     --wheel-size: min(80vw, 420px);
     height: auto;
